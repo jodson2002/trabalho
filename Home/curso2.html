@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos preparatorios</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .topo{
+            text-align: center;
+        }
+
+        .open {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 35px;
+            margin: 15px;  
+            background-color: #444;
+            color: white; 
+            padding: 2px 2px 2px; 
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            
+            
+        }
+
+        nav {
+            background-color: #444;
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+            
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 ;
+            text-decoration: underline;
+            font-size: 20px;
+            display: block;
+            text-decoration: none;
+            padding: 12px 10px 12px 32px;
+           
+        }
+
+        nav a:hover{
+            color: #444;
+            background-color: white;
+
+        }
+
+
+        .container {
+            max-width: 800px; 
+            padding: 20px;
+            
+        }
+
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="topo">Desenvolvimento Web</h1>
+        <a href="#" class="open" onclick="abrirMenu()">&#9776;</a>
+    </header>
+    <nav id="menu">
+        <a href="#" onclick="fecharMenu()">&times;</a>
+        <a href="home1.html">Home</a>
+        <a href="curso.html">Design</a>
+        <a href="curso3.html">Marketing Digital</a>
+    </nav>
+
+    <div class="container" id="conteudo">
+
+        <h2>Informação do Curso</h2>
+
+        <p>Alguma informação sobre o curso</p>
+
+        <h2>Mapeamento do Curso</h2>
+
+        <p>Jornada Inicial</p>
+
+        <ul>
+
+            <li>I1</li>
+            <li>I2</li>
+            <li>I3</li>
+            <li>I4</li>
+            <li>I5</li>
+
+
+        </ul>
+
+        <p>Jornada Final</p>
+
+        <ul>
+
+            <li>F1</li>
+            <li>F2</li>
+            <li>F3</li>
+            <li>F4</li>
+            <li>F5</li>
+
+
+        </ul>
+
+        <h2>Contato do Cordenador</h2>
+
+        <p>Email: Zeus@cursofree.com</p>
+        <p>Telefone: (55) 81 95456-7890</p>
+
+    </div>
+
+    <script>
+        function abrirMenu() {
+            document.getElementById('menu').style.width='250px';
+            document.getElementById('conteudo').style.marginLeft='250px';
+        }
+        
+        function fecharMenu(){
+            document.getElementById('menu').style.width='0px';
+            document.getElementById('conteudo').style.marginLeft='0px';
+        }
+    </script>
+
+</body>
+
+</html>
